@@ -1,7 +1,6 @@
 
 /* font-family: 'Source Sans Pro', sans-serif; */
 
-
 @font-face {
     font-family: 'antoniolight';
     src: url('Antonio-Light-webfont.eot');
@@ -12,51 +11,63 @@
          url('Antonio-Light-webfont.svg#antoniolight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
-
 	overflow: hidden;
+}
+
+/* Nav */
+#nav{
+  position: fixed;
+  width: 100%;
+  background-color:rgba(0,0,0,0.5);
+  z-index: 5;
+  height: 30px;
+}
+
+#nav ul li{
+  color: white;
+  display: inline;
 }
 
 /* First section -- home */
 
-#home { 
-	background: url(../images/home_bg.jpg) 50% 0 no-repeat fixed; 
-	height: 800px;  
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative; 
+#home {
+	background: url(../images/home_bg.jpg) 50% 0 no-repeat fixed;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
 
+#home .title_wrap{
+  position: relative;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #home h1 {
-	margin-right: auto;
 	font-family: 'antoniolight';
-	font-size: 2em;
+	font-size: 3em;
 	color: white;
-	/* float: right;  this should fix spacing before hero image... but it shouldnt depend on this*/
 	text-align: center;
-	
-	
 }
 
 #home h1 span {
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #0492ff;	
-	font-size: 14px;
+	color: #0492ff;
+	font-size: .4em;
 	text-align: center;
 }
 
 .social {
-	
 	margin: 0 auto;
 	width: 1000px;
-	
 }
-
 
 #home ul li {
   -webkit-transition: all 1s ease;
@@ -65,7 +76,7 @@ body {
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
- 
+
 #home ul li:hover {
   -webkit-filter: grayscale(100%);
 }
@@ -76,38 +87,22 @@ body {
 	display: inline;
 	list-style-type: none;
 	padding-right: 5px;
-	
 }
-
 
 /* Second section -- firstquote */
 
 #tilt1 {
 	background: white;
 	height: 300px;
-	margin: 0 auto 0; 
+	margin: 50px auto 0;
 	margin-left: -50px;
-	width: 5000px; 
-	position: relative; 
-	/*-webkit-box-shadow: 0px -13px 11px 0px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow:    0px -13px 11px 0px rgba(0, 0, 0, 0.25);
-	box-shadow:         0px -13px 11px 0px rgba(0, 0, 0, 0.25);*/
+	width: 5000px;
+	position: relative;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
 	-ms-transform: rotate(5deg);
 	transform: rotate(5deg);
 }
-/*
-#firstquote {
--webkit-transform: rotate(5deg);
--moz-transform: rotate(5deg);
--ms-transform: rotate(5deg);
-transform: rotate(5deg);
-width: 110%;
-height: 200px;
-position: absolute;
-left: -5%;
-}*/
 
 span.quote1 {
 	margin: auto 0;
@@ -134,30 +129,26 @@ span.quote1 {
 
 }
 
-#portfolio { 
+#portfolio {
 	background: #ffffff;
 	height: 1000px;
-	margin: 0 auto; 
-	width: 100%; 
+	margin: 0 auto;
+	width: 100%;
 	margin-top: -350px;
-	max-width: 1920px; 
+	max-width: 1920px;
 	position: relative;
-	font-family: 'Source Sans Pro', sans-serif; 	
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #portfolio .aboutwork {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-    
-
 }
 
 #portfolio .aboutwork .copy {
-
 	float: left;
 	width: 450px;
-
 }
 
 #portfolio .aboutwork .copy h2 {
@@ -168,35 +159,29 @@ span.quote1 {
 }
 
 #portfolio .aboutwork .copy p {
-	font-size: 12px;
+	font-size: 14px;
 
 }
 
 #portfolio .aboutwork .display {
-
 	overflow: hidden;
-	margin-bottom: 30px;
 }
 
 #portfolio .aboutwork .display img  {
 	padding-left: 20px;
 	width: 700px;
 	float: left;
-
 }
 
-
  .portcontent_wrap {
-	
 	width: 100%;
-
 }
 
 .portcontent_wrap .portfolioimages {
 
 	float: left;
 	width: 25%;
-	
+
 }
 
 .portcontent_wrap .portfolioimages img {
@@ -220,8 +205,6 @@ span.quote1 {
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
- 
-
 
 /* Forth section -- tilt2 */
 
@@ -229,16 +212,15 @@ span.quote1 {
 	z-index: 1;
 	background: white;
 	height: 300px;
-	margin: 0 auto 0; 
-	margin-bottom: 70px;
+	margin: 0 auto 0x;
 	margin-left: -50px;
-	width: 5000px; 
-	position: relative; 
+	width: 5000px;
+	position: relative;
 	-webkit-transform: rotate(-5deg);
 	-moz-transform: rotate(-5deg);
 	-ms-transform: rotate(-5deg);
 	transform: rotate(-5deg);
-	
+
 }
 
 
@@ -262,37 +244,27 @@ div.skillscontent_wrap h3 {
 #about {
 	background: #181818;
 	height: 300px;
-	margin: 0 auto 0; 
+	margin: 0 auto 0;
 	margin-left: -50px;
-	width: 5000px; 
-	position: relative; 
-	/*-webkit-box-shadow: 0px -13px 11px 0px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow:    0px -13px 11px 0px rgba(0, 0, 0, 0.25);
-	box-shadow:         0px -13px 11px 0px rgba(0, 0, 0, 0.25);*/
+	width: 5000px;
+	position: relative;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
 	-ms-transform: rotate(5deg);
 	transform: rotate(5deg);
-	
 }
-
-#about .aboutcontent_wrap {
-	
-	
-}
-
 
 /* Sixth section -- secondquote */
 
-#secondquote { 
-	background: url(../images/about_bg.jpg) 50% no-repeat fixed; 
-	height: 1000px;  
-	margin: 0 auto; 
+#secondquote {
+	background: url(../images/about_bg.jpg) 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
 	margin-top: 10px;
-	width: 100%; 
-	max-width: 1920px; 
-	position: relative; 
-	
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+
 }
 
 span.quote2 {
@@ -307,7 +279,7 @@ span.quote2 {
 }
 
 span {
-	
+
 	color: #1a8be3;
 }
 
@@ -316,23 +288,23 @@ span {
 #contact {
 	background: #292929;
 	height: 250px;
-	margin: 0 auto; 
-	width: 100%; 
-	max-width: 1920px; 
-	position: relative; 
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
 	box-shadow: 20px 0 0 0 rgba(0,0,0,0.8);
 }
 
 
 #contact .contact_wrap {
-	
+
 	text-align: center;
 	width: 400px;
 	margin: 0 auto;
 }
 
 .button {
-	
+
 	border-radius: 7px;
 	margin-top: 50px;
 	background-color:#feb41c;
@@ -349,7 +321,7 @@ span {
 	width:100px;
 	text-decoration:none;
 	text-align:center;
-	
+
 }
 
 .button:hover {
@@ -362,41 +334,36 @@ span {
 }
 
 #contact ul {
-	
+
 	width: auto;
 	margin-top: 20px;
-	
+
 }
 
 #contact ul li {
-	
+
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	-ms-transition: all 1s ease;
         transition: all 1s ease;
 }
- 
+
 #contact ul li:hover {
 	-webkit-filter: grayscale(100%);
 }
 
 #contact ul li {
-	
 	display: inline;
 }
 
-
 #contact h5 {
-	
 	color: #202020;
-	margin-top: 10px; 
+	margin-top: 10px;
 	font-family: aller;
 }
 
 /* Hover effects */
-
-
 
 .view {
     width: 210px;
@@ -424,7 +391,7 @@ span {
     position: relative
 }
 .view h4 {
-	
+
     text-transform: uppercase;
     font-family: 'oswaldlight';
     color: white;
@@ -456,9 +423,7 @@ span {
 }
 .view a.info:hover {
     box-shadow: 0 0 5px #000
-} 
-
-
+}
 
 .view-first img {
    -webkit-transition: all 0.2s linear;
@@ -478,21 +443,7 @@ span {
    -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
 }
-/*.view-first h2 {
-   -webkit-transform: translateY(-100px);
-   -moz-transform: translateY(-100px);
-   -o-transform: translateY(-100px);
-   -ms-transform: translateY(-100px);
-   transform: translateY(-100px);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-}*/
+
 .view-first p {
    -webkit-transform: translateY(100px);
    -moz-transform: translateY(100px);
