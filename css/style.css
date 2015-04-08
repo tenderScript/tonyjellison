@@ -17,25 +17,39 @@ body {
 	overflow: hidden;
 }
 
-/* Nav */
+/* ============== Navigation ============== */
 #nav{
   position: fixed;
   width: 100%;
   background-color:rgba(0,0,0,0.5);
   z-index: 5;
-  height: 30px;
+  height: 45px;
+}
+
+#nav .logo {
+
+}
+
+#nav ul {
+  margin-top: 13px;
+  margin-right: 55px;
+  float: right;
 }
 
 #nav ul li{
+  margin-left: 75px;
   color: white;
   display: inline;
 }
 
 #nav ul li a {
+  font-size: 18px;
+  font-family: 'antoniolight', sans-serif;
+  color: white;
   text-decoration: none;
 }
 
-/* First section -- home */
+/* ============== First Section -- Home ============== */
 
 #home {
 	background: url(../images/home_bg.jpg) 50% 0 no-repeat fixed;
@@ -93,7 +107,7 @@ body {
 	padding-right: 5px;
 }
 
-/* Second section -- firstquote */
+/* ============== Second Section -- Tilt1 ============== */
 
 #tilt1 {
 	background: white;
@@ -108,29 +122,16 @@ body {
 	transform: rotate(5deg);
 }
 
-span.quote1 {
-	margin: auto 0;
-	display: inline;
-	text-align: center;
-	position: absolute;
-	margin-top: 65px;
-	width: 100%;
-	font-family: 'oswaldbold';
-	font-size: 2em;
-	color: #292929;
-}
 
-/* Third section -- portfolio */
+/* ============== Third Section -- Portfolio ============== */
 
 #linebreak {
-
 	width: 50px;
 	border-width: 1px;
 	border-color: #0492ff;
 	border-style: solid;
 	margin-top: 15px;
 	margin-bottom: 15px;
-
 }
 
 #portfolio {
@@ -182,19 +183,14 @@ span.quote1 {
 }
 
 .portcontent_wrap .portfolioimages {
-
 	float: left;
 	width: 25%;
-
 }
 
 .portcontent_wrap .portfolioimages img {
 	z-index: 2;
 	position: relative;
 	-webkit-filter: grayscale(100%)
-
-
-
 }
 
 .portcontent_wrap .portfolioimages img:hover{
@@ -210,7 +206,7 @@ span.quote1 {
           transition: all 1s ease;
 }
 
-/* Forth section -- tilt2 */
+/* ============== Forth Section -- Tilt2 ============== */
 
 #tilt2 {
 	z-index: 1;
@@ -224,28 +220,51 @@ span.quote1 {
 	-moz-transform: rotate(-5deg);
 	-ms-transform: rotate(-5deg);
 	transform: rotate(-5deg);
-
 }
 
-
-div.skillscontent_wrap h3 {
-	margin-left: auto;
-	margin-bottom: 30px;
-	color: #292929;
-	font-size: 2em;
-	font-family: 'oswaldbold';
-}
-
-
-@media screen and (max-width: 765px) {
-	#skills{
-		height: 700px;
-	}
-}
-
-/* Fifth section -- about */
+/* ============== Fifth Section -- About ============== */
 
 #about {
+	background: url(../images/about_bg.jpg) 50% no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#about .resume_wrap{
+  width: 200px;
+  padding-top: 450px;
+  margin: auto;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'antoniolight';
+  color: white;
+  font-size: 2em;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#about .resume_button {
+  border: solid thin #0492ff;
+  font-family: 'Source Sans Pro';
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none !important;
+}
+
+#about .resume_button a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+/* ============== Sixth Section -- Tilt3 ============== */
+
+#tilt3 {
 	background: #181818;
 	height: 300px;
 	margin: 0 auto 0;
@@ -258,36 +277,7 @@ div.skillscontent_wrap h3 {
 	transform: rotate(5deg);
 }
 
-/* Sixth section -- secondquote */
-
-#secondquote {
-	background: url(../images/about_bg.jpg) 50% no-repeat fixed;
-	height: 1000px;
-	margin: 0 auto;
-	margin-top: 10px;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-
-}
-
-span.quote2 {
-	margin: auto 0;
-	display: inline;
-	text-align: center;
-	position: absolute;
-	width: 100%;
-	font-family: 'oswald';
-	font-size: 2em;
-	color: #feb41c;
-}
-
-span {
-
-	color: #1a8be3;
-}
-
-/* Seventh section -- contact */
+/* ============== Seventh Section -- Contact ============== */
 
 #contact {
 	background: #292929;
@@ -299,16 +289,13 @@ span {
 	box-shadow: 20px 0 0 0 rgba(0,0,0,0.8);
 }
 
-
 #contact .contact_wrap {
-
 	text-align: center;
 	width: 400px;
 	margin: 0 auto;
 }
 
 .button {
-
 	border-radius: 7px;
 	margin-top: 50px;
 	background-color:#feb41c;
@@ -325,7 +312,6 @@ span {
 	width:100px;
 	text-decoration:none;
 	text-align:center;
-
 }
 
 .button:hover {
@@ -367,7 +353,7 @@ span {
 	font-family: aller;
 }
 
-/* Hover effects */
+/* ============== Hover Effects ============== */
 
 .view {
     width: 210px;
