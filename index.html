@@ -18,6 +18,10 @@
 	<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
 	<link href="css/hover.css" rel="stylesheet" media="all">
+
+  <script type="text/javascript" src="simplebox/simplebox.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="simplebox/simplebox.css" />
+
   <!-- Dont judge my code I'm a designer goddamnit! (: -->
 </head>
 
@@ -26,6 +30,7 @@
   <!-- navigation -->
   <section id="nav">
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#portfolio">Work</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -37,6 +42,13 @@
     <div class="title_wrap">
       <h1>Tony Ellison</h1>
       <span>interactive_designer</span>
+      <ul>
+          <li><a href="https://www.behance.net/tonyjellison"><img src="images/icons/behance.png"></a></a></li>
+          <li><a href="http://www.linkedin.com/in/tonyjellison"><img src="images/icons/linkedin.png"></a></a></li>
+          <li><a href="https://www.instagram.com/tendertoony"><img src="images/icons/instagram.png"></a></a></li>
+          <li><a href="https://www.instagram.com/tendertoony"><img src="images/icons/github.png"></a></a></li>
+          <!-- <li><a href="https://www.facebook.com/"><img src="images/icons/facebook.png"></a></li> -->
+      </ul>
     </div>
   </section>
 
@@ -60,35 +72,51 @@
     </div>
     <div class="portcontent_wrap">
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work1.jpg">
+        <a href="innerpage1.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work1.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work2.jpg">
+        <a href="innerpage2.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work2.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work3.jpg">
+        <a href="innerpage3.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work3.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work4.jpg">
+        <a href="innerpage4.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work4.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work5.jpg">
+        <a href="innerpage5.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work5.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work6.jpg">
+        <a href="innerpage6.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work6.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work7.jpg">
+        <a href="innerpage7.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work7.jpg">
+        </a>
     	</div>
 
     	<div class="portfolioimages">
-    		<img class="hvr-grow-shadow" src="images/work8.jpg">
+        <a href="innerpage8.html#work">
+    		    <img class="hvr-grow-shadow" src="images/work8.jpg">
+        </a>
     	</div>
     </div>
 
@@ -102,7 +130,7 @@
   <section id="about" data-speed="10" data-type="background">
     <div class="resume_wrap">
       <h2>About Me</h2>
-      <a href><div class="resume_button">download_resume</div></a>
+      <a href="./images/Tonyellison_resume.pdf" download="newfilename"><div class="resume_button">download_resume</div></a>
     </div>
   </section>
 
@@ -111,8 +139,15 @@
    <div class="tilt3_contentwrap">
      <h1>Who Am I?</h1>
      <div class="tilt3_linebreak"></div>
-     <p>Born and raised in West Michigan, I grew up with a passion for art & technology. When Im not busy designing things for clients I like to draw, snowboard, play video games, and try every craft brew i can get my hands on.
+     <p>Born and raised in West Michigan, I grew up with a passion for art & technology. When Im not busy making things I like to draw, snowboard, play video games, and try every craft brew i can get my hands on.
      Check out some of my Illustration work :P </p>
+     <ul>
+       <li><a rel="simplebox" href="images/d1.jpg" title="Beta Whale - Did this when it was far too cold to do anything outside. pen/ink/watercolor"><img src="images/d1_tb.png"></a></li>
+       <li><a rel="simplebox" href="images/d2.jpg" title="Moonset LLSR - Album art concept. pen/watercolor"><img src="images/d2_tb.png"></a></li>
+       <li><a rel="simplebox" href="images/d3.jpg" title="Keyeye - Speed drawing I did not wanting to leave my desk. pen/ink"><img src="images/d3_tb.png"></a></li>
+       <li><a rel="simplebox" href="images/d4.jpg" title="Comet Crash - Fun drawing for a special someone. pen/ink"><img src="images/d4_tb.png"></a></li>
+       <li><a rel="simplebox" href="images/d5.jpg" title="Weekone - Experimenting with techinques. pen/ink"><img src="images/d5_tb.png"></a></li>
+     </ul>
    </div>
  </section>
 
@@ -121,19 +156,20 @@
   </section>
 
   <!-- Seventh Section - Contact -->
-  <section id="contact" data-speed="10" data-type="background">
+  <section id="contact">
     <div class="contact_wrap">
-      <a href="mailto:tonyjellison@gmail.com?Subject=Hey%20Tony!" target="_blank">
-      </a>
+      <p>tonyjellison@gmail.com</p>
+      <p>Connect With Me</p>
       <ul>
-          <li><a href="https://plus.google.com/101909951928081100033/posts/p/pub"><img src="images/social/google_grey.png"></a></a></li>
-          <li><a href="http://dribbble.com/tonyjellison"><img src="images/social/dribble_grey.png"></a></a></li>
-          <li><a href="http://www.linkedin.com/in/tonyjellison"><img src="images/social/linkedin_grey.png"></a></a></li>
-          <li><a href="https://www.behance.net/tonyjellison"><img src="images/social/behance_grey.png"></a></li>
+        <li><a href="https://www.behance.net/tonyjellison"><img src="images/icons/behance.png"></a></a></li>
+        <li><a href="http://www.linkedin.com/in/tonyjellison"><img src="images/icons/linkedin.png"></a></a></li>
+        <li><a href="https://www.instagram.com/tendertoony"><img src="images/icons/instagram.png"></a></a></li>
+        <li><a href="https://www.instagram.com/tendertoony"><img src="images/icons/github.png"></a></a></li>
       </ul>
-      <h5>Copyright 2015 - Tony Ellison - All Rights Reserved</h5>
+      <p>Copyright 2015 - Tony Ellison - All Rights Reserved</p>
     </div> <!-- end content wrap -->
   </section>
+  <div id="contact_bottom"></div>
   <footer>
   	<!-- I would like to personally thank and give a shout out to Mohiuddin Parekh @ NetTuts+ for helping me grasp the .js portion of this website
     	The parallax effect of this site can be found at http://www.mohi.me -->

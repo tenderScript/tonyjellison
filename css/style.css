@@ -82,25 +82,23 @@ body {
 	margin: 0 auto;
 	width: 1000px;
 }
-
-#home ul li {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-
-#home ul li:hover {
-  -webkit-filter: grayscale(100%);
+#home ul {
+  margin-top: 5px;
 }
 
 #home ul li {
-	margin: 40px 0 0 0;
-	float: right;
 	display: inline;
 	list-style-type: none;
-	padding-right: 5px;
+}
+
+#home ul li img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+}
+
+#home ul li img:hover {
+  opacity: 1;
 }
 
 /* ============== Second Section -- Tilt1 ============== */
@@ -235,7 +233,7 @@ body {
 
 #about .resume_wrap{
   width: 200px;
-  padding-top: 450px;
+  padding-top: 360px;
   margin: auto;
   text-align: center;
 }
@@ -272,7 +270,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: -200px auto 0;
+  margin: -400px auto 0;
 	position: relative;
   z-index: 1;
   font-family: 'Source Sans Pro';
@@ -285,7 +283,6 @@ body {
   width: 400px;
   margin: 0 auto 0 auto;
   padding: 10% 0 0 0;
-
 }
 
 #tilt3 .tilt3_contentwrap h1 {
@@ -302,21 +299,23 @@ body {
   margin: 15px auto 15px auto;
 }
 
+#tilt3 ul {
+  margin-top: 15px;
+}
+
+#tilt3 ul li {
+  list-style: none;
+  display: inline;
+}
+
+
 /* ============== Seventh Section -- Contact ============== */
 
 #contact_tilt {
-
-  background: #0e0d0e; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #0e0d0e 0%, #262426 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0e0d0e), color-stop(100%,#262426)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #0e0d0e 0%,#262426 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #0e0d0e 0%,#262426 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #0e0d0e 0%,#262426 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #0e0d0e 0%,#262426 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0d0e', endColorstr='#262426',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  height: 700px;
+  background-color: #0f0f0f;
+  height: 200px;
 	width: 3000px;
-  margin: -400px 0 0 -100px;
+  margin: -440px 0 0 -100px;
   z-index: 2;
   position: relative;
   -webkit-transform: rotate(-4deg);
@@ -329,67 +328,52 @@ body {
 }
 
 #contact .contact_wrap {
+  color: white;
 	text-align: center;
 	width: 400px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
   position: relative;
   z-index: 3;
 }
 
-.button {
-	border-radius: 7px;
-	margin-top: 50px;
-	background-color:#feb41c;
-	text-indent:0;
-	border:1px solid #e3a11b;
-	display:inline-block;
-	color:#292929;
-	font-family:oswaldbook;
-	font-size:15px;
-	font-weight:bold;
-	font-style:normal;
-	height:40px;
-	line-height:40px;
-	width:100px;
-	text-decoration:none;
-	text-align:center;
-}
-
-.button:hover {
-	background-color:#e3a11b;
-}
-
-.button:active {
-	position:relative;
-	top:1px;
+#contact {
+  margin-top: 10px;
+  position: relative;
 }
 
 #contact ul {
-	width: auto;
-	margin-top: 20px;
-
-}
-
-#contact ul li {
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-        transition: all 1s ease;
-}
-
-#contact ul li:hover {
-	-webkit-filter: grayscale(100%);
+  margin-top: 10px;
 }
 
 #contact ul li {
 	display: inline;
 }
 
-#contact h5 {
-	color: #202020;
+#contact ul li img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+}
+
+#contact ul li img:hover {
+  opacity: 1;
+}
+
+#contact p {
+	color: #white;
 	margin-top: 10px;
-	font-family: aller;
+	font-family: 'Source Sans Pro';
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#contact_bottom {
+  width: 100%;
+  height: 275px;
+  background-color: #0f0f0f;
+  position: relative;
+  z-index: 2;
+  margin: -140px 0 0 0;
 }
 
 /* ============== Hover Effects ============== */
